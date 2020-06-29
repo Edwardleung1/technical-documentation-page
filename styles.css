@@ -1,13 +1,17 @@
+/* Remove the bullets and the margins and padding from the list */
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 18px; /* Increased text to enable scrolling */
+}
 /* Fixed sidenav, full height */
-#navbar,
-.sidenav {
+#navbar {
         height: 100%;
-        width: 275px;
+        width: 290px;
         position: fixed;
         z-index: 1;
         top: 0;
@@ -16,8 +20,7 @@ ul {
         overflow-x: hidden;
         padding-top: 10px;
 }
-/* Style the sidenav links*/
-.sidenav a,
+/* Style the sidenav links and h3 element */
 #navbar a,
 h3  {
         padding: 6px 8px 6px 16px;
@@ -31,4 +34,13 @@ h3  {
         text-align: left;
         cursor: pointer;
         outline: none;
+}
+/* On mouse-over */
+#navbar a:hover {
+    color: #f1f1f1;
+}
+/* Main content */
+.main-section {
+    margin-left: 290px; /* Same as the width of the navbar */
+    padding: 0px 10px;
 }
