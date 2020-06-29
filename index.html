@@ -11,18 +11,19 @@
       <div class="sidenav">
         <nav id="navbar">
           <ul> 
-            <li><h3>JS Documentation</h3></li>
+            <li><header class="h3">JS Documentation</header></li>
             <li><a href="#introduction" class="nav-link">Introduction</a></li>
             <li><a href="#what_you_should_already_know" class="nav-link">What you should already know</a></li>
             <li><a href="#javascript_and_java" class="nav-link">JavaScript and Java</a></li>
             <li><a href="#hello_world" class="nav-link">Hello world</a></li>
             <li><a href="#variables" class="nav-link">Variables</a></li>
+            <li><a href="#declaring_variables" class="nav-link">Declaring Variables</a></li>
           </ul>
         </nav>
       </div>
       <section class="main-section" id="introduction">
+        <header>Introduction</header>
         <article>
-        <h2>Introduction</h2>
         <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight
           language. Inside a host environment (for example, a web browser), JavaScript can be connected to the
           objects of its environment to provide programmatic control over them.</p>
@@ -43,8 +44,8 @@
       </section>
 
       <section class="main-section" id="what_you_should_already_know">
+        <header>What you should already know</header>
         <article>
-        <h2>What you should already know</h2>
         <p>This guide assumes you have the following basic background:</p>
         <ul>
           <li>A general understanding of the Internet and the World Wide Web (WWW).</li><br>
@@ -56,8 +57,8 @@
       </section>
       
       <section class="main-section" id="javascript_and_java">
+        <header>JavaScript and Java</header>
         <article>
-        <h2>JavaScript and Java</h2>
         <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The
           JavaScript language resembles Java but does not have Java's static typing and strong type checking. 
           JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs 
@@ -76,8 +77,8 @@
       </section>
 
       <section class="main-section" id="hello_world">
+        <header>Hello world</header>
         <article>
-        <h2>Hello world</h2>
         <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" 
           JavaScript code:</p>
         <code>function greetMe(yourName) { alert("Hello " + yourName); }
@@ -87,8 +88,8 @@
       </section>
 
       <section class="main-section" id="variables">
+        <header>Variables</header>
         <article>
-        <h2>Variables</h2>
         <p>You use variables as symbolic names for values in your application. The names of variables, 
           called identifiers, conform to certain rules.</p>
         <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent 
@@ -97,6 +98,24 @@
         <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the 
           Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, 
           temp99, and _name.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="declaring_variables">
+        <header>Declaring variables</header>
+        <article>
+        <p>You can declare a variable in three ways:</p>
+        <p>With the keyword var. For example,</p>
+        <code>var x = 42.</code>
+        <p>This syntax can be used to declare both local and global variables</p>
+        <p>By simply assigning it a value. For example,</p>
+        <code>x = 42.</code>
+        <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't 
+          use this variant.</p>
+        <p>With the keyword let. For example,</p>
+        <code>let y = 13.</code><br>
+        <code>let y += 13.</code>
+        <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
         </article>
       </section>
     </main>
